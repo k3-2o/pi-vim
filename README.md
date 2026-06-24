@@ -40,10 +40,16 @@ Mode shows in the footer and auto-hides after 3s.
 ## Files
 
 ```
-~/.pi/agent/extensions/pi-vim/
+pi-vim/
 ├── index.ts    — extension entry
-├── editor.ts   — PiVimEditor class
-├── ops.ts      — text operations
-├── motions.ts  — motion helpers
-└── types.ts    — shared types
+├── README.md
+├── package.json
+└── src/
+    ├── editor.ts   — PiVimEditor class
+    ├── motions.ts  — motion helpers
+    ├── ops.ts      — text operations
+    └── types.ts    — shared types
 ```
+
+The deployed extension (`~/.pi/agent/extensions/pi-vim/`) keeps all
+files flat so pi can discover them without a build step.
